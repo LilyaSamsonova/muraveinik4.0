@@ -22,7 +22,7 @@
 @font-face {
 		font-family: "SF UI Text"; /* Гарнитура шрифта */
 		src: url(../fonts/sf-ui-text-light.ttf);
-		font-weight: 200;
+		font-weight: lighter;
 		font-style: normal;
 	 }
    * {
