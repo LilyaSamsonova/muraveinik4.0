@@ -1,0 +1,1378 @@
+@import "reset.css";
+
+
+@font-face {
+    font-family: "SF UI Text"; /* Гарнитура шрифта */
+    src: url(../fonts/sf-ui-text-medium.ttf);
+		font-weight: medium;
+		font-style: normal;
+   }
+@font-face {
+	  font-family: "SF UI Text"; /* Гарнитура шрифта */
+	  src: url(../fonts/sf-ui-text-regular.ttf);
+		font-weight: normal;
+		font-style: normal;
+	 }
+@font-face {
+		font-family: "SF UI Text"; /* Гарнитура шрифта */
+		src: url("../fonts/sf-ui-text-bold.ttf");
+		font-weight: bold;
+		font-style: normal;
+	 }
+@font-face {
+		font-family: "SF UI Text"; /* Гарнитура шрифта */
+		src: url(../fonts/sf-ui-text-light.ttf);
+		font-weight: 200;
+		font-style: normal;
+	 }
+   * {
+     text-decoration: none;
+   }
+   a {
+     color: white;
+     font-family: SF UI Text;
+   }
+body {
+overflow-x: hidden;
+width: 100%;
+margin: 0;
+cursor: default;
+scroll-behavior: smooth;
+background: linear-gradient(-45deg, #544CED, #E73C7E, #544CED, #413C9F);
+background-size: 600% 600%;
+-webkit-animation: Gradient 30s ease infinite;
+-moz-animation: Gradient 30s ease infinite;
+animation: Gradient 30s ease infinite;
+padding-top: 8.89vh;
+}
+@-webkit-keyframes Gradient {
+0% {
+background-position: 0% 35%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 80% 50%
+}
+}
+
+@-moz-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+
+@keyframes Gradient {
+0% {
+background-position: 20% 50%
+}
+50% {
+background-position: 80% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+img {
+max-width: 100%;
+height: auto;
+}
+
+html {
+width: 100%;
+overflow-x: hidden;
+background: #3E3A89;
+scroll-behavior: smooth;
+}
+
+.wrapper {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+.sootnosheniye {
+position: relative;
+padding-bottom: 112.638889%;
+}
+
+.content {
+position: absolute;
+top: 0; bottom: 0; left: 0; right: 0; padding: 0;
+}
+/* MAIN PAGE*/
+.menu {
+  width: 100%;
+  height: 7%;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.15);
+  top: 0;
+  z-index: 1;
+}
+
+
+.menubar {
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  left: 5%;
+  top: 30%;
+}
+.afisha {
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  left: 20%;
+  top: 30%;
+}
+.magazin {
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  left: 30%;
+  top: 30%;
+}
+.logo {
+  background: url( '../images/логотип.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  cursor: pointer;
+  height: 58.5846154%;
+  width: 2.22222222%;
+  left: 49.1%;
+  top: 18%;
+}
+.onas {
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  left: 78%;
+  top: 30%;
+}
+.contact {
+  font-size: 20px;
+  position: absolute;
+  cursor: pointer;
+  left: 88%;
+  top: 30%;
+}
+.left_half {
+  position: fixed;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #3E3A89;
+}
+.novosti {
+  position: absolute;
+  top: 17%;
+  left: 11%;
+  width: 78%;
+  height: 55%;
+}
+.news1 {
+  position: absolute;
+  display: block;
+  background: url( '../images/новости1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.new1 h1 {
+  position: absolute;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: medium;
+  font-family: "SF UI Text";
+  left: 11%;
+  top: 75%;
+  color: white;
+
+}
+.new1 p {
+  position: absolute;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: SF UI Text;
+  left: 11%;
+  top: 85%;
+  color: white;
+}
+.arrow1 {
+  position: absolute;
+  background: url( '../images/leftarrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 94%;
+  left: 7%;
+  width: 3%;
+  height: 3%;
+  cursor: pointer;
+}
+.arrow2 {
+  position: absolute;
+  background: url( '../images/leftarrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  top: 94%;
+  left: 90%;
+  width: 3%;
+  height: 3%;
+  cursor: pointer;
+}
+.right_half {
+  width: 99.8%;
+  height: 53.8%;
+  top: -2.5%;
+  display: block;
+}
+
+.footer {
+  position: relative;
+  width: 50%;
+  height: 3%;
+  top: 43.5%;
+  left: 50%;
+
+}
+
+.qvadrat {
+  width: 100%;
+  height: 100%;
+}
+
+.qvadrat h3 {
+  font-size: 20px;
+  font-weight: medium;
+  font-family: SF UI Text;
+}
+.foot1:hover, .foot2:hover {
+  color: #9CB0FF;
+}
+.foot1 {
+  position: absolute;
+  cursor: pointer;
+  left: 10%;
+  top: 2%;
+  color: white;
+}
+.foot2 {
+  position: absolute;
+  cursor: pointer;
+  left: 43%;
+  top: 2%;
+  color: white;
+}
+#foot_inst {
+  position: absolute;
+  background: url( '../images/inst.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: -5%;
+  left: 77%;
+  width: 4%;
+  height: 51%;
+}
+#foot_facebook {
+  position: absolute;
+  background: url( '../images/facebook.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: -5%;
+  left: 82%;
+  width: 4%;
+  height: 51%;
+}
+#foot_google {
+  position: absolute;
+  background: url( '../images/google.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: -5%;
+  left: 87%;
+  width: 4%;
+  height: 51%;
+}
+
+.menubar:hover, .afisha:hover, .magazin:hover, .onas:hover, .contact:hover {
+color: #9CB0FF;
+}
+
+.right_half {
+  position: relative;
+  width: 50%;
+  left: 50%;
+}
+.oneright {
+  position: absolute;
+  background: url( '../images/1right_main.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 11.6%;
+  left: 20%;
+  width: 60.9722222%;
+  height: 50%;
+  font-family: SF UI Text;
+  color: white;
+}
+.zagolovok {
+  position: absolute;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: SF UI Text;
+  top: 4%;
+  left: 4%;
+}
+.m30 {
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 4%;
+  top: 12.8%;
+}
+.m03 {
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 4%;
+  top: 35.8%;
+}
+.m06 {
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 4%;
+  top: 56.7%;
+}
+.month1 {
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  top: 13%;
+  left: 35%;
+}
+.party1 {
+  position: absolute;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+  top: 17%;
+  left: 35%;
+}
+.month2 {
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  top: 36%;
+  left: 35%;
+}
+.party2 {
+  position: absolute;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+  top: 40%;
+  left: 35%;
+}
+.month3 {
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  top: 57%;
+  left: 35%;
+}
+.party3 {
+  position: absolute;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+  top: 61%;
+  left: 35%;
+}
+.ticket1 {
+  position: absolute;
+  display: inline-block;
+  background: url( '../images/tickets.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 12%;
+  left: 85%;
+  width: 8%;
+  height: 8%;
+}
+.ticket2 {
+  position: absolute;
+  display: inline-block;
+  background: url( '../images/tickets.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 35%;
+  left: 85%;
+  width: 8%;
+  height: 8%;
+}
+.ticket3 {
+  position: absolute;
+  display: inline-block;
+  background: url( '../images/tickets.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 56%;
+  left: 85%;
+  width: 8%;
+  height: 8%;
+}
+.tworight {
+  position: absolute;
+  background: url( '../images/2right_main.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 51%;
+  left: 20%;
+  width: 60.9722222%;
+  height: 50%;
+  font-family: SF UI Text;
+  color: white;
+}
+.ot1 {
+  position: absolute;
+  top: 13%;
+  left: 4%;
+  width: 88%;
+  height: 50%;
+  color: white;
+  font-weight: lighter;
+}
+.arrow1_1 {
+  position: absolute;
+  background: url( '../images/leftarrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 60%;
+  left: 35%;
+  width: 3%;
+  height: 3%;
+  cursor: pointer;
+}
+.arrow2_2 {
+  position: absolute;
+  background: url( '../images/leftarrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  top: 60%;
+  left: 60%;
+  width: 3%;
+  height: 3%;
+  cursor: pointer;
+}
+
+.threeright {
+  position: absolute;
+  background: url( '../images/2right_main.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 90.4%;
+  left: 20%;
+  width: 60.9722222%;
+  height: 50%;
+  font-family: SF UI Text;
+  color: white;
+}
+.number{
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  width: 88%;
+  height: 50%;
+  color: white;
+  font-weight: lighter;
+}
+.sale {
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 73%;
+  top: 4%;
+}
+.tshirtt {
+  position: absolute;
+  background: url( '../images/Tshirt1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 18%;
+  left: 17%;
+  width: 65%;
+  height: 70%;
+}
+.fourright {
+  position: absolute;
+  background: url( '../images/2right_main.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 129.8%;
+  left: 20%;
+  width: 60.9722222%;
+  height: 50%;
+  font-family: SF UI Text;
+  color: white;
+}
+.coct1, .coct2, .coct3, .coct4 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+}
+.vib1, .vib2, .vib3, .vib4 {
+  position: absolute;
+  font-weight: lighter;
+  font-size: 18px;
+}
+/* 133657 */
+.coct1 {
+  top: 13%;
+  left: 4%;
+}
+.coct2 {
+  top: 26%;
+  left: 4%;
+}
+.coct3 {
+  top: 39%;
+  left: 4%;
+}
+.coct4 {
+  top: 52%;
+  left: 4%;
+}
+.vib1 {
+  top: 16.5%;
+  left: 4%;
+
+}
+.vib2 {
+  top: 29.5%;
+  left: 4%;
+
+}
+.vib3 {
+  top: 42.5%;
+  left: 4%;
+
+}
+.vib4 {
+  top: 55.5%;
+  left: 4%;
+
+}
+
+/* RESPONSIVE */
+
+/* BAR PAGE */
+.bar_top {
+  position: relative;
+  width: 100%;
+  height: 4.5%;
+}
+.zagolovok_bar {
+  font-family: SF UI Text;
+  color: white;
+  font-weight: medium;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 31%;
+  top: 60%;
+}
+.star1 {
+  position: absolute;
+  background: url( '../images/звездочки.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 40%;
+  left: 4%;
+  width: 40%;
+  height: 80%;
+}
+.star2 {
+  position: absolute;
+  background: url( '../images/звездочки.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 40%;
+  left: 92%;
+  width: 40%;
+  height: 80%;
+}
+.coctails {
+  position: relative;
+  width: 70%;
+  height: 81%;
+  left: 15%;
+  top: 3%;
+}
+.rosalinda {
+  position: absolute;
+  background: url( '../images/розалинда.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.skyblu {
+  position: absolute;
+  background: url( '../images/скайблу.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 0;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.clunakota {
+  position: absolute;
+  background: url( '../images/слюнакота.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 0;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.sunrise {
+  position: absolute;
+  background: url( '../images/санрайз.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 20.2%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.mytun{
+  position: absolute;
+  background: url( '../images/мятун.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 20.2%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.podrushka{
+  position: absolute;
+  background: url( '../images/подружка.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 20.2%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.percent1 {
+  position: absolute;
+  background: url( '../images/процент1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 40.5%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.percent2 {
+  position: absolute;
+  background: url( '../images/процент2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 40.5%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.percent3 {
+  position: absolute;
+  background: url( '../images/процент3.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 40.5%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.soldat5 {
+  position: absolute;
+  background: url( '../images/солдат.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 60.8%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.veseluha {
+  position: absolute;
+  background: url( '../images/веселуха.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 60.8%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.slepota {
+  position: absolute;
+  background: url( '../images/слепота.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 60.8%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.limonad {
+  position: absolute;
+  background: url( '../images/лимонад.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 81.1%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.destvie {
+  position: absolute;
+  background: url( '../images/действие.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 81.1%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.pensia {
+  position: absolute;
+  background: url( '../images/пенсия.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 81.1%;
+  height: 18.1074766%;
+  width: 31.25%;
+}
+.buy1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy2 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy3 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy4 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy5 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy6 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy7 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy8 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy9 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy10 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy11 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy12 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+/* shop PAGE */
+
+.zagolovok_shop {
+  font-family: SF UI Text;
+  color: white;
+  font-weight: medium;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 21%;
+  top: 60%;
+}
+.shop_top {
+  position: relative;
+  width: 100%;
+  height: 7%;
+}
+.merch {
+  position: relative;
+  width: 71.0954064%;
+  height: 68.8888889%;
+  left: 15%;
+  top: 5%;
+}
+.tshirt {
+  position: absolute;
+  background: url( '../images/футболка1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.tshirt_1 {
+  position: absolute;
+  background: url( '../images/футболка2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 0;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.earpods {
+  position: absolute;
+  background: url( '../images/наушники.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 0;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.book {
+  position: absolute;
+  background: url( '../images/книга.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  left: 0%;
+  top: 35.8%;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.flash {
+  position: absolute;
+  background: url( '../images/флешки.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 35.8%;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.bag {
+  position: absolute;
+  background: url( '../images/сумки.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 35.8%;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.sticker {
+  position: absolute;
+  background: url( '../images/стикеры.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0%;
+  top: 71.6%;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.bag1 {
+  position: absolute;
+  background: url( '../images/пакет.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 34%;
+  top: 71.6%;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.cap {
+  position: absolute;
+  background: url( '../images/стакан.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 68%;
+  top: 71.6%;
+  height: 31.8151093%;
+  width: 32.25%;
+}
+.buy1_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy2_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy3_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy4_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy5_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy6_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy7_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy8_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+.buy9_1 {
+  position: absolute;
+  background: url( '../images/купить.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 7.41935484%;
+  width: 6.77419355%;
+  left: 80%;
+  top: 85%;
+}
+/* AFISHA */
+.zagolovok_afisha {
+  font-family: SF UI Text;
+  color: white;
+  font-weight: medium;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 27%;
+  top: 60%;
+}
+.afisha_top {
+  position: relative;
+  width: 100%;
+  height: 3.5%;
+}
+.background_af {
+  position: absolute;
+  overflow: hidden;
+  background: url( '../images/фонафиша.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 7%;
+  height: 20%;
+  width: 80%;
+}
+.plakat {
+  position: absolute;
+  background: url( '../images/плакатыы.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 2%;
+  top: 1%;
+  height: 98%;
+  width: 98%;
+}
+.p1 {
+  position: absolute;
+  background: url( '../images/пенная.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 26%;
+  height: 6.71892497%;
+  width: 80%;
+}
+.p2 {
+  position: absolute;
+  background: url( '../images/вечеринка.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 33%;
+  height: 6.71892497%;
+  width: 80%;
+}
+.p3 {
+  position: absolute;
+  background: url( '../images/мы.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 40%;
+  height: 6.71892497%;
+  width: 80%;
+}
+.p4 {
+  position: absolute;
+  background: url( '../images/сахарный.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 47%;
+  height: 6.71892497%;
+  width: 80%;
+}
+.p5 {
+  position: absolute;
+  background: url( '../images/выступление.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 54%;
+  height: 6.71892497%;
+  width: 80%;
+}
+.p6 {
+  position: absolute;
+  background: url( '../images/день.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 10%;
+  top: 61%;
+  height: 6.71892497%;
+  width: 80%;
+}
+.r1 {
+  position: absolute;
+  background: url( '../images/зиминие.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 10%;
+  top: 74%;
+  height: 20%;
+  width: 38%;
+}
+
+.r2 {
+  position: absolute;
+  background: url( '../images/управление.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 52%;
+  top: 74%;
+  height: 20%;
+  width: 38%;
+}
+.r1:hover, .r2:hover {
+  filter: hue-rotate(30deg);
+}
+.rr1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: medium;
+  cursor: pointer;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 15%;
+  top: 90%;
+}
+.rr2 {
+  font-family: "SF UI Text";
+  color: white;
+  cursor: pointer;
+  font-weight: medium;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 55%;
+  top: 90%;
+}
+.rr1:hover, .rr2:hover {
+color: #9CB0FF;
+}
+
+.zagolovok_web {
+  font-family: SF UI Text;
+  color: white;
+  font-weight: medium;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 43%;
+  top: 70%;
+}
+.k1 {
+  position: absolute;
+  background: url( '../images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 78%;
+  top: 33%;
+  height: 30%;
+  width: 18.4542587%;
+}
+.k1 {
+  position: absolute;
+  background: url( '../images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 78%;
+  top: 33%;
+  height: 30%;
+  width: 18.4542587%;
+}
+.k2 {
+  position: absolute;
+  background: url( '../images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 78%;
+  top: 33%;
+  height: 30%;
+  width: 18.4542587%;
+}
+.k3 {
+  position: absolute;
+  background: url( '../images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 78%;
+  top: 33%;
+  height: 30%;
+  width: 18.4542587%;
+}
+.k4 {
+  position: absolute;
+  background: url( '../images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 78%;
+  top: 33%;
+  height: 30%;
+  width: 18.4542587%;
+}
+.k5 {
+  position: absolute;
+  background: url( '../images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 78%;
+  top: 33%;
+  height: 30%;
+  width: 18.4542587%;
+}
+.k6 {
+  position: absolute;
+  background: url( '../images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 78%;
+  top: 33%;
+  height: 30%;
+  width: 18.4542587%;
+}
+/* ABOUT PAGE */
+.zagolovok_about {
+  font-family: SF UI Text;
+  color: white;
+  font-weight: medium;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 46%;
+  top: 60%;
+}
