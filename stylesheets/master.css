@@ -350,7 +350,7 @@ color: #9CB0FF;
   position: absolute;
   display: inline-block;
   left: 4%;
-  top: 12.8%;
+  top: 15.8%;
 }
 .m03 {
   font-weight: 800;
@@ -373,7 +373,7 @@ color: #9CB0FF;
   display: inline-block;
   font-weight: 800;
   font-size: 18px;
-  top: 13%;
+  top: 15%;
   left: 35%;
 }
 .party1 {
@@ -381,7 +381,7 @@ color: #9CB0FF;
   display: inline-block;
   font-weight: 400;
   font-size: 18px;
-  top: 17%;
+  top: 19%;
   left: 35%;
 }
 .month2 {
@@ -423,7 +423,7 @@ color: #9CB0FF;
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  top: 12%;
+  top: 14%;
   left: 85%;
   width: 8%;
   height: 8%;
@@ -540,7 +540,7 @@ color: #9CB0FF;
 }
 .fourright {
   position: absolute;
-  background: url( '../images/2right_main.svg');
+  background: url( '../images/1right_main.svg');
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -551,96 +551,113 @@ color: #9CB0FF;
   font-family: "SF UI Text";
   color: white;
 }
-.coct1, .coct2, .coct3, .coct4 {
-  position: absolute;
+.me01 {
   font-weight: 800;
-  font-size: 18px;
-}
-.vib1, .vib2, .vib3, .vib4 {
+  font-size: 36px;
   position: absolute;
-  font-weight: 200;
-  font-size: 18px;
-}
-/* 133657 */
-.coct1 {
-  top: 13%;
+  display: inline-block;
   left: 4%;
+  top: 15.8%;
 }
-.coct2 {
-  top: 26%;
+.me02 {
+  font-weight: 800;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
   left: 4%;
+  top: 35.8%;
 }
-.coct3 {
-  top: 39%;
+.me03 {
+  font-weight: 800;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
   left: 4%;
-}
-.coct4 {
-  top: 52%;
-  left: 4%;
+  top: 56.7%;
 }
 .vib1 {
-  top: 16.5%;
-  left: 4%;
-
+  position: absolute;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  top: 19%;
+  left: 35%;
+}
+.coct1 {
+  position: absolute;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 18px;
+  top: 15%;
+  left: 35%;
 }
 .vib2 {
-  top: 29.5%;
-  left: 4%;
-
+  position: absolute;
+  display: inline-block;
+  font-weight: normal;
+  font-size: 18px;
+  top: 40%;
+  left: 35%;
+}
+.coct2 {
+  position: absolute;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 18px;
+  top: 36%;
+  left: 35%;
+}
+.coct3 {
+  position: absolute;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 18px;
+  top: 57%;
+  left: 35%;
 }
 .vib3 {
-  top: 42.5%;
-  left: 4%;
-
-}
-.vib4 {
-  top: 55.5%;
-  left: 4%;
-
+  position: absolute;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  top: 61%;
+  left: 35%;
 }
 .coct1_1 {
   position: absolute;
-  background: url( '../images/сл.svg');
+  display: inline-block;
+  background: url( '../images/бокал.svg');
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  top: 12%;
-  left: 80%;
-  width: 10%;
-  height: 10%;
+  top: 14%;
+  left: 85%;
+  width: 8%;
+  height: 8%;
 }
 .coct2_1 {
   position: absolute;
-  background: url( '../images/слеп.svg');
+  display: inline-block;
+  background: url( '../images/бокал.svg');
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  top: 25%;
-  left: 80%;
-  width: 10%;
-  height: 10%;
+  top: 35%;
+  left: 85%;
+  width: 8%;
+  height: 8%;
 }
 .coct3_1 {
   position: absolute;
-  background: url( '../images/санр.svg');
+  display: inline-block;
+  background: url( '../images/бокал.svg');
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  top: 38%;
-  left: 80%;
-  width: 10%;
-  height: 10%;
-}
-.coct4_1 {
-  position: absolute;
-  background: url( '../images/подр.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  top: 51%;
-  left: 80%;
-  width: 10%;
-  height: 10%;
+  top: 56%;
+  left: 85%;
+  width: 8%;
+  height: 8%;
 }
 /* RESPONSIVE */
 
@@ -1101,6 +1118,18 @@ transform: scale(1);
   width: 100%;
 }
 .book:hover .magaz4{opacity: 100%;}
+.book:hover .book h1{opacity: 0%;}
+.book h1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  opacity: 100%;
+  position: absolute;
+  display: inline-block;
+  left: 78%;
+  top: 4.1%;
+}
 .flash {
   position: absolute;
   background: url( '../images/флешки.svg');
