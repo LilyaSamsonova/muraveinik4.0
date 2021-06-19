@@ -29,7 +29,7 @@
   }
   .shopura {
     position: fixed;
-    background: url( '../muraveinik4.0/images/всплывающееокномагаз.svg');
+    background: url( 'images/всплывающееокномагаз.svg');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -51,9 +51,11 @@
     $('.buy1_1, .buy2_1, .buy3_1, .buy5_1, .buy6_1, .buy7_1, .buy8_1, .buy9_1').click(function(){
     $('.shopura').css('display', 'block');
     $('.shopura').css('display', 'block');
+    setTimeout(function(){
+ $('.shopura').css('display', 'none');
+}, 3000);
     })
-    
-  });
+    });
     </script>
   <body>
     <div class="wrapper">
