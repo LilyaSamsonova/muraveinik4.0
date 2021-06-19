@@ -771,30 +771,75 @@ color: #9CB0FF;
   background: url( '../images/процент1.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
   left: 0%;
   top: 40.5%;
   height: 18.1074766%;
   width: 31.25%;
+  animation: p1 7s infinite ease-in-out;
+  animation-delay: .8s;
+}
+@keyframes p1 {
+  from {left: 0%;}
+  25% {left: 68%;}
+  50% {left: 68%;}
+  75% {left: 0%;}
+  to {left: 0%}
+}
+.percent1:hover {
+animation-play-state: paused;
+transform: scale(1.1);
+filter: hue-rotate(30deg);
 }
 .percent2 {
   position: absolute;
   background: url( '../images/процент2.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
   left: 34%;
   top: 40.5%;
   height: 18.1074766%;
   width: 31.25%;
+  animation: p2 7s infinite ease-in-out;
+  animation-delay: .8s;
+}
+@keyframes p2 {
+  from {left: 34%;}
+  25% {left: 34%;}
+  50% {left: 0%;}
+  75% {left: 68%;}
+  to {left: 34%}
+}
+.percent2:hover {
+animation-play-state: paused;
+transform: scale(1.1);
+filter: hue-rotate(30deg);
 }
 .percent3 {
   position: absolute;
   background: url( '../images/процент3.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
   left: 68%;
   top: 40.5%;
   height: 18.1074766%;
   width: 31.25%;
+  animation: p3 7s infinite ease-in-out;
+  animation-delay: .8s;
+}
+@keyframes p3 {
+  from {left: 68%;}
+  25% {left: 0%;}
+  50% {left: 34%;}
+  75% {left: 34%;}
+  to {left: 68%}
+}
+.percent3:hover {
+animation-play-state: paused;
+transform: scale(1.1);
+filter: hue-rotate(30deg);
 }
 .soldat5 {
   position: absolute;
@@ -1358,8 +1403,10 @@ transform: scale(1);
   width: 100%;
   height: 3.5%;
 }
-.background_af {
+/* .background_af {
   position: absolute;
+  display: flex;
+  flex-direction: row;
   overflow: hidden;
   background: url( '../images/фонафиша.svg');
   background-size: contain;
@@ -1368,17 +1415,35 @@ transform: scale(1);
   top: 7%;
   height: 20%;
   width: 80%;
-}
-.plakat {
+} */
+/* img {
+  left: 0%;
+  top: 6%;
+  height: 98%;
+  width: 500%;
+} */
+
+/* .plakat {
   position: absolute;
   background: url( '../images/плакатыы.png');
   background-size: contain;
   background-repeat: no-repeat;
-  left: 2%;
-  top: 1%;
+
+  left: 100%;
+  top: 6%;
   height: 98%;
-  width: 98%;
-}
+  width: 570%; */
+  /* animation: run 4s infinite ease-in-out;
+  animation-delay: 1s;
+  animation-play-state: running; */
+/* } */
+/* @keyframes run {
+0% {background-position: 0 top;}
+25% {background-position: -570% top;}
+50% {background-position: -1140% top;}
+75% {background-position: -1710% top;}
+100% {background-position: -2280% top;}
+} */
 .p1 {
   position: absolute;
   background: url( '../images/пенная.svg');
