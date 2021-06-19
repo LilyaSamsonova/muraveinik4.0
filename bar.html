@@ -30,7 +30,7 @@
   }
   .barura {
     position: fixed;
-    background: url( '../muraveinik4.0/images/всплывающееокнобар.svg');
+    background: url( 'images/всплывающееокнобар.svg');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -40,9 +40,36 @@
     height: 40%;
     display: none;
   }
+  .pr1 {
+    position: absolute;
+    background: url( 'images/скидка55.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  .pr2 {
+    position: absolute;
+    background: url( 'images/скидка20.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+  .pr3 {
+    position: absolute;
+    background: url( 'images/скидка0.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
   #foot_inst2 {
     position: absolute;
-    background: url( '../muraveinik4.0/images/inst.svg');
+    background: url( 'images/inst.svg');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -53,7 +80,7 @@
   }
   #foot_facebook2 {
     position: absolute;
-    background: url( '../muraveinik4.0/images/facebook.svg');
+    background: url( 'images/facebook.svg');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -64,7 +91,7 @@
   }
   #foot_google2 {
     position: absolute;
-    background: url( '../muraveinik4.0/images/google.svg');
+    background: url( 'images/google.svg');
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -85,7 +112,25 @@
   $('.buy1, .buy2, .buy3, .buy4, .buy5, .buy6, .buy7, .buy8, .buy9, .buy10, .buy11, .buy12').click(function(){
   $('.barura').css('display', 'block');
   $('.barura').css('display', 'block');
+  setTimeout(function(){
+  $('.barura').css('display', 'none');
+  }, 3000);
   })
+  $('.percent2').click(function(){
+  $('.pr2').css('display', 'block');
+  $('.pr2').css('display', 'block');
+  })
+  $('.percent1').click(function(){
+  $('.pr1').css('display', 'block');
+  $('.pr1').css('display', 'block');
+  })
+  $('.percent3').click(function(){
+  $('.pr3').css('display', 'block');
+  $('.pr3').css('display', 'block');
+  })
+  $( "#target" ).mousemove(function( event ) {
+    $('.pr2').css('display', 'none');
+    })
 });
   </script>
   <body>
@@ -113,9 +158,9 @@
   <div class="sunrise"> <div class="buy4"></div> </div>
   <div class="mytun"> <div class="buy5"></div> </div>
   <div class="podrushka"> <div class="buy6"></div> </div>
-  <div class="percent1"></div>
-  <div class="percent2"></div>
-  <div class="percent3"></div>
+  <div class="percent1"> <div class="pr1 none"></div> </div>
+  <div class="percent2"> <div class="pr2 none"></div> </div>
+  <div class="percent3"> <div class="pr3 none"></div> </div>
   <div class="soldat5"> <div class="buy7"></div> </div>
   <div class="veseluha"> <div class="buy8"></div> </div>
   <div class="slepota"> <div class="buy9"></div> </div>
