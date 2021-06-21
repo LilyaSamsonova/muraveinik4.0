@@ -1321,7 +1321,7 @@ transform: scale(1);
   left: 80%;
   top: 85%;
 }
-.buy4_1 {
+/* .buy4_1 {
   position: absolute;
   background: url( '../images/купить.svg');
   background-size: contain;
@@ -1331,7 +1331,7 @@ transform: scale(1);
   width: 6.77419355%;
   left: 80%;
   top: 85%;
-}
+} */
 .buy5_1 {
   position: absolute;
   background: url( '../images/купить.svg');
