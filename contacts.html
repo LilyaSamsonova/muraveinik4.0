@@ -299,7 +299,7 @@
   left: 65%;
   top: 83%;
 }
-  .penatic {
+  /* .penatic {
     position: absolute;
     background: url( '../muraveinik4.0/images/анкета.svg');
     background-size: contain;
@@ -308,7 +308,7 @@
     top: 25%;
     width: 60%;
     height: 40%;
-  }
+  } */
   .kupit {
     position: absolute;
     background: url( '../muraveinik4.0/images/заявка.svg');
@@ -320,7 +320,159 @@
     width: 20%;
     height: 6%;
   }
+
+
+form {
+  position: absolute;
+  top: 23%;
+  left: 56%;
+  width: 40%;
+  height: 40%;
+  background-color: #3E3A89;
+}
+
+h2 		 {
+  text-align:center;
+  margin-bottom:50px;
+}
+h2 small {
+  font-weight:400;
+  color:#888;
+  display:block;
+}
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+  position:relative;
+  margin-bottom:25px;
+  background-color: #3E3A89;
+}
+input 				{
+  font-size:18px;
+  font-family: "SF UI Text";
+  color: #AFBFFF;
+  font-weight: 400;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  background-color: #3E3A89;
+  border-bottom:1px solid #fff;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  font-size:18px;
+  font-family: "SF UI Text";
+  color:#fff;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:12px;
+  color:#9E9CC4;
+  font-size:18px;
+  opacity: 40%;
+  font-family: "SF UI Text";
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:102.5%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#fff;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:100%;
+  top:0%;
+  left:60%;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+.anketa {
+  position: fixed;
+  background: url( 'images/всплывающееокноанкета.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 27%;
+  left: 53%;
+  width: 46%;
+  height: 43%;
+  display: none;
+}
+.none {
+display: none;
+}
+.block {
+display: block;
+}
   </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.kupit').click(function(){
+    $('.ankets').css('display', 'block');
+    $('.anketa').css('display', 'block');
+    setTimeout(function(){
+ $('.anketa').css('display', 'none');
+}, 3000);
+    })
+    });
+    </script>
   <body>
     <div class="wrapper">
     <div class="sootnosheniye">
@@ -358,6 +510,44 @@
   </div>
 <div class="penatic"></div>
 <div class="kupit"></div>
+<form>
+
+    <div class="group">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>имя</label>
+    </div>
+
+    <div class="group">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>дата рождения</label>
+    </div>
+
+    <div class="group">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>профессия</label>
+    </div>
+
+    <div class="group">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>номер телефона</label>
+    </div>
+    <div class="group">
+      <input type="text" required>
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>электронная почта</label>
+    </div>
+  </form>
+<div class="anketa none"></div>
+</div>
   <div class="footer">
   <div class="qvadrat">
   <a href="https://portfolio.hse.ru/Student/16414"> <h3 class="foot1">муравейник</h3></a>
