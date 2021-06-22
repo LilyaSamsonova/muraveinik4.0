@@ -136,7 +136,7 @@
   }
   .party1_tic {
     position: absolute;
-    background: url( '../muraveinik4.0/images/танцульки.svg');
+    background: url( '../muraveinik4.0/images/туса3.png');
     background-size: contain;
     background-repeat: no-repeat;
     top: 9%;
@@ -177,7 +177,55 @@
     width: 12%;
     height: 6%;
   }
+  .arrow {
+    position: absolute;
+    background: url( '../muraveinik4.0/images/Arrow1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 5.4%;
+    top: 1%;
+    cursor: pointer;
+    width: 5%;
+    height: 5%;
+  }
+  .arrow:hover {
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.3));
+    transform: scale(1.05);
+  }
+  .kupit:hover {
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.3));
+    transform: scale(1.05);
+  }
+.bilet {
+    position: fixed;
+    background: url( '../muraveinik4.0/images/всплывающееокнобилет.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 27%;
+    left: 53%;
+    width: 46%;
+    height: 43%;
+    display: none;
+  }
+  .none {
+  display: none;
+  }
+  .block {
+  display: block;
+  }
   </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.kupit').click(function(){
+    $('.bilet').css('display', 'block');
+    $('.bilet').css('display', 'block');
+    setTimeout(function(){
+  $('.bilet').css('display', 'none');
+  }, 3000);
+    })
+    });
+    </script>
   <body>
     <div class="wrapper">
     <div class="sootnosheniye">
@@ -187,7 +235,7 @@
     <a href="afishaa.html"><h2 class="afisha">афиша</h2></a>
     <a href="shop.html"><h2 class="magazin">магазин</h2></a>
     <a href="index.html"><div class="logo"></div></a>
-    <a href="#"><h2 class="onas">о нас</h2></a>
+    <a href="about.html"><h2 class="onas">о нас</h2></a>
     <a href="contacts.html"><h2 class="contact">контакты</h2></a>
 
     </div>
@@ -197,6 +245,7 @@
       <div class="star2_1"></div>
    </div>
   <div class="leftparty1">
+      <a href="afishaa.html"><div class="arrow"></div></a>
     <div class="party1_tic"></div>
   <div class="party1_t">  <p>Эта тусовка для самых отрывных и безбашенных муравьев. Приглашенными гостями является группа Х, о которой вы сможете узнать, находясь там. Вход абсолютно бесплатный. Нужно всего лишь заполнить поля с вашим именем <br>и электронным адресом.
  </p>
@@ -204,6 +253,7 @@
   </div>
 <div class="penatic"></div>
 <div class="kupit"></div>
+<div class="bilet none"></div>
   <div class="footer">
   <div class="qvadrat">
   <a href="https://portfolio.hse.ru/Student/16414"> <h3 class="foot1">муравейник</h3></a>
