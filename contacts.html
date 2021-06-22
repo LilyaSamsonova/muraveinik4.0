@@ -320,7 +320,10 @@
     width: 20%;
     height: 6%;
   }
-
+  .kupit:hover{
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.3));
+    transform: scale(1.05);
+  }
 
 form {
   position: absolute;
@@ -465,7 +468,7 @@ display: block;
   <script type="text/javascript">
     $(document).ready(function(){
     $('.kupit').click(function(){
-    $('.ankets').css('display', 'block');
+    $('.anketa').css('display', 'block');
     $('.anketa').css('display', 'block');
     setTimeout(function(){
  $('.anketa').css('display', 'none');
@@ -482,7 +485,7 @@ display: block;
     <a href="afishaa.html"><h2 class="afisha">афиша</h2></a>
     <a href="shop.html"><h2 class="magazin">магазин</h2></a>
     <a href="index.html"><div class="logo"></div></a>
-    <a href="#"><h2 class="onas">о нас</h2></a>
+    <a href="about.html"><h2 class="onas">о нас</h2></a>
     <a href="contacts.html"><h2 class="contact">контакты</h2></a>
 
     </div>
