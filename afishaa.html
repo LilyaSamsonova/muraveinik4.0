@@ -21,10 +21,10 @@
   }
 
   .footer {
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 3%;
-    top: 94.8%;
+    top: 98%;
     left: 50%;
 
   }
@@ -61,7 +61,7 @@
     width: 4%;
     height: 28%;
   }
-.run {
+/* .run {
   left: 0;
   top: 30%;
 width: 100%;
@@ -72,6 +72,36 @@ height: 30%;
   top: 5%;
   width: 100%;
   height: 20%;
+} */
+.gallery_row_container {
+        position: relative;
+        left: 0;
+        top: 2%;
+        width: 100%;
+        height: 16%;
+
+        padding: 1.5% 0;
+      }
+      .gallery_row {
+        position: relative;
+        width: 1400%;
+        height: 100%;
+        background: url( 'images/плакатыы.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% top;
+        animation-play-state: running;
+        animation: gallery_row_anim 30s linear infinite;
+      }
+      @keyframes gallery_row_anim {
+        0% {background-position: 0% top;}
+        50% {background-position: -37% top;}
+        100% {background-position: 0% top;}
+      }
+.gallery_row:hover {
+  animation-play-state: paused;
+  filter: hue-rotate(30deg);
+
 }
   </style>
   <body>
@@ -79,7 +109,7 @@ height: 30%;
 
 
 
-      
+
     <div class="sootnosheniye">
     <div class="content">
     <div class="menu">
@@ -87,7 +117,7 @@ height: 30%;
     <a href="afishaa.html"><h2 class="afisha">афиша</h2></a>
     <a href="shop.html"><h2 class="magazin">магазин</h2></a>
     <a href="index.html"><div class="logo"></div></a>
-    <a href="#"><h2 class="onas">о нас</h2></a>
+    <a href="about.html"><h2 class="onas">о нас</h2></a>
     <a href="contacts.html"><h2 class="contact">контакты</h2></a>
 
     </div>
@@ -96,10 +126,12 @@ height: 30%;
       <div class="star1"></div>
       <div class="star2"></div>
    </div>
-   <marquee сlass="run" behavior="scroll" direction="left" scrollamount="20" scrolldelay="0" loop="0" hspace="0" height="10%" width="500%" top="30%">
+   <!-- <marquee сlass="run" behavior="scroll" direction="left" scrollamount="20" scrolldelay="0" loop="0" hspace="0" height="10%" width="500%" top="30%">
    <img src="images/плакатыы.png">
-   </marquee>
-
+   </marquee> -->
+<div class="gallery_row_container">
+  <div class="gallery_row"></div>
+</div>
 
 
    <div class="p1">
