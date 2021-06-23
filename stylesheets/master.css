@@ -681,30 +681,6 @@ color: #9CB0FF;
   position: relative;
   padding-bottom: 274.133333%;
   }
-  .novosti {
-
-    top: 17%;
-    left: 11%;
-    width: 78%;
-    height: 75%;
-  }
-
-  .arrow1 {
-
-    top: 95%;
-    left: 7%;
-    width: 4%;
-    height: 4%;
-
-  }
-  .arrow2 {
-
-    top: 95%;
-    left: 90%;
-    width: 4%;
-    height: 4%;
-
-  }
   .left_half {
     position: fixed;
     display: inline-block;
@@ -715,6 +691,30 @@ color: #9CB0FF;
     background: #3E3A89;
     z-index: 2;
   }
+  .novosti {
+
+    top: 10%;
+    left: 11%;
+    width: 78%;
+    height: 75%;
+  }
+
+  .arrow1 {
+
+    top: 90%;
+    left: 7%;
+    width: 4%;
+    height: 4%;
+
+  }
+  .arrow2 {
+
+    top: 90%;
+    left: 90%;
+    width: 4%;
+    height: 4%;
+
+  }
   .right_half {
     width: 100%;
     height: 53.8%;
@@ -724,305 +724,213 @@ color: #9CB0FF;
     z-index: 1;
   }
   .oneright {
-    position: absolute;
     background: url( '../images/гл1.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    top: 55%;
-    left: 20%;
-    width: 80%;
-    height: 50%;
-    font-family: "SF UI Text";
-    color: white;
+    top: 68%;
+    left: 5%;
+    width: 89.5%;
+    height: 19.8%;
   }
   .zagolovok {
-    position: absolute;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 800;
-    font-family: "SF UI Text";
-    top: 4%;
-    left: 4%;
-    color: white;
+    display: none;
   }
   .m30 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 16px;
     position: absolute;
     display: inline-block;
     left: 4%;
-    top: 15.8%;
+    top: 11%;
   }
   .m03 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 16px;
     position: absolute;
     display: inline-block;
     left: 4%;
-    top: 35.8%;
+    top: 45%;
   }
   .m06 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 16px;
     position: absolute;
     display: inline-block;
     left: 4%;
-    top: 56.7%;
+    top: 79%;
   }
   .month1 {
     position: absolute;
     display: inline-block;
     font-weight: 800;
-    font-size: 18px;
-    top: 15%;
-    left: 35%;
+    font-size: 16px;
+    top: 11%;
+    left: 12%;
   }
   .party1 {
     position: absolute;
     display: inline-block;
     font-weight: 400;
-    font-size: 18px;
-    top: 19%;
+    font-size: 14px;
+    top: 8%;
     left: 35%;
   }
   .month2 {
     position: absolute;
     display: inline-block;
     font-weight: 800;
-    font-size: 18px;
-    top: 36%;
-    left: 35%;
+    font-size: 16px;
+    top: 79%;
+    left: 12%;
   }
   .party2 {
     position: absolute;
     display: inline-block;
-    font-weight: normal;
-    font-size: 18px;
-    top: 40%;
+    font-weight: 400;
+    font-size: 14px;
+    top: 43%;
     left: 35%;
   }
   .month3 {
     position: absolute;
     display: inline-block;
     font-weight: 800;
-    font-size: 18px;
-    top: 57%;
-    left: 35%;
+    font-size: 16px;
+    top: 45%;
+    left: 12%;
   }
   .party3 {
     position: absolute;
     display: inline-block;
     font-weight: 400;
-    font-size: 18px;
-    top: 61%;
+    font-size: 14px;
+    top: 76%;
     left: 35%;
   }
   .ticket1 {
-    position: absolute;
-    display: inline-block;
-    background: url( '../images/tickets.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    top: 14%;
+    top: 7%;
     left: 85%;
-    width: 8%;
-    height: 8%;
+    width: 13%;
+    height: 17%;
   }
   .ticket2 {
-    position: absolute;
-    display: inline-block;
-    background: url( '../images/tickets.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    top: 35%;
+    top: 41%;
     left: 85%;
-    width: 8%;
-    height: 8%;
+    width: 17%;
+    height: 17%;
   }
   .ticket3 {
-    position: absolute;
-    display: inline-block;
-    background: url( '../images/tickets.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    top: 56%;
+    top: 75%;
     left: 85%;
-    width: 8%;
-    height: 8%;
+    width: 17%;
+    height: 17%;
   }
   .tworight {
     position: absolute;
-    background: url( '../images/отзывы.png');
+    background: url( '../images/отзывыайфон.png');
     background-size: 300% 100%;
     background-position: 0% 0;
-    top: 51%;
-    left: 20%;
-    width: 60.9722222%;
-    height: 35%;
-
+    top: 92%;
+    left: 5%;
+    width: 89.5%;
+    height: 19.8%;
   }
-  .ot1 {
+  .arrow1_11 {
     position: absolute;
-    top: 13%;
-    left: 4%;
-    width: 88%;
-    height: 50%;
-    color: white;
-    font-weight: 200;
-    font-family: "SF UI Text";
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .arrow2_22 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
   }
   .arrow1_1 {
-    position: absolute;
-    background: url( '../images/leftarrow.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 85%;
-    left: 35%;
-    width: 4%;
-    height: 4%;
-    cursor: pointer;
+  display: none;
   }
   .arrow2_2 {
-    position: absolute;
-    background: url( '../images/leftarrow.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: rotate(180deg);
-    top: 85%;
-    left: 60%;
-    width: 4%;
-    height: 4%;
-    cursor: pointer;
+  display: none;
   }
-
   .threeright {
     position: absolute;
-    background: url( '../images/2right_main.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    top: 90.4%;
-    left: 20%;
-    width: 60.9722222%;
-    height: 50%;
+    background: url( '../images/гл3.svg');
+    top: 116%;
+    left: 5%;
+    width: 89.5%;
+    height: 19.8%;
     font-family: "SF UI Text";
     color: white;
   }
   .number{
-    position: absolute;
-    top: 9%;
-    left: 4%;
-    width: 88%;
-    height: 50%;
-    color: white;
-    font-weight: 200;
+  display: none;
   }
   .sale {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 16px;
     position: absolute;
     display: inline-block;
-    left: 73%;
-    top: 4%;
+    left: 4%;
+    top: 10%;
   }
   .tshirtt {
     position: absolute;
-    background: url( '../images/Tshirt1.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 18%;
-    left: 17%;
-    width: 65%;
-    height: 70%;
+    display: none;
   }
   .fourright {
     position: absolute;
-    background: url( '../images/1right_main.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    top: 129.8%;
-    left: 20%;
-    width: 60.9722222%;
-    height: 50%;
+    background: url( '../images/гл4.svg');
+    top: 140%;
+    left: 5%;
+    width: 89.5%;
+    height: 19.8%;
     font-family: "SF UI Text";
     color: white;
   }
   .me01 {
-    font-weight: 800;
-    font-size: 36px;
-    position: absolute;
-    display: inline-block;
-    left: 4%;
-    top: 15.8%;
+    display: none;
   }
   .me02 {
-    font-weight: 800;
-    font-size: 36px;
-    position: absolute;
-    display: inline-block;
-    left: 4%;
-    top: 35.8%;
+    display: none;
   }
   .me03 {
-    font-weight: 800;
-    font-size: 36px;
-    position: absolute;
-    display: inline-block;
-    left: 4%;
-    top: 56.7%;
+  display: none;
   }
   .vib1 {
-    position: absolute;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 18px;
-    top: 19%;
-    left: 35%;
+    display: none;
   }
   .coct1 {
     position: absolute;
     display: inline-block;
-    font-weight: 800;
-    font-size: 18px;
-    top: 15%;
-    left: 35%;
+    font-weight: 200;
+    font-size: 12px;
+    top: 77%;
+    left: 4%;
   }
   .vib2 {
-    position: absolute;
-    display: inline-block;
-    font-weight: normal;
-    font-size: 18px;
-    top: 40%;
-    left: 35%;
+    display: none;
   }
   .coct2 {
     position: absolute;
     display: inline-block;
-    font-weight: 800;
-    font-size: 18px;
-    top: 36%;
-    left: 35%;
+    font-weight: 200;
+    font-size: 12px;
+    top: 77%;
+    left: 41%;
   }
   .coct3 {
     position: absolute;
     display: inline-block;
-    font-weight: 800;
-    font-size: 18px;
-    top: 57%;
-    left: 35%;
+    font-weight: 200;
+    font-size: 12px;
+    top: 77%;
+    left: 75%;
   }
   .vib3 {
-    position: absolute;
-    display: inline-block;
-    font-weight: 400;
-    font-size: 18px;
-    top: 61%;
-    left: 35%;
+  display: none;
   }
   .coct1_1 {
     position: absolute;
@@ -1031,10 +939,10 @@ color: #9CB0FF;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    top: 14%;
-    left: 85%;
-    width: 8%;
-    height: 8%;
+    top: 25%;
+    left: 12%;
+    width: 40%;
+    height: 40%;
   }
   .coct2_1 {
     position: absolute;
@@ -1043,10 +951,10 @@ color: #9CB0FF;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    top: 35%;
-    left: 85%;
-    width: 8%;
-    height: 8%;
+    top: 25%;
+    left: 46%;
+    width: 40%;
+    height: 40%;
   }
   .coct3_1 {
     position: absolute;
@@ -1055,10 +963,10 @@ color: #9CB0FF;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    top: 56%;
-    left: 85%;
-    width: 8%;
-    height: 8%;
+    top: 25%;
+    left: 80%;
+    width: 40%;
+    height: 40%;
   }
 }
 /* BAR PAGE */
