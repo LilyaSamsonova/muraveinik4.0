@@ -63,6 +63,28 @@ $(document).ready(function(){
     slider_result = slider+"%";
     $(".tworight").css("background-position", slider_result);
     });
+    $(document).ready(function(){
+
+    let slider = 0;
+    let slider_result = 0;
+
+    $(".arrow1_11").click(function(){
+    slider -= 100;
+    slider_result = slider+"%";
+    $(".tworight").css("background-position", slider_result);
+    });
+    });
+
+    $(document).ready(function(){
+    let slider = 0;
+    let slider_result = 0;
+
+    $(".arrow2_22").click(function(){
+    slider += 100;
+    slider_result = slider+"%";
+    $(".tworight").css("background-position", slider_result);
+    });
+    });
     });
     </script>
     <body>
@@ -103,6 +125,8 @@ $(document).ready(function(){
     <h2 class="zagolovok">отзывы</h2>
     <div class="arrow1_1"></div>
     <div class="arrow2_2"></div>
+    <div class="arrow1_11"></div>
+    <div class="arrow2_22"></div>
   </div>
 
   <a href="shop.html"> <div class="threeright">
