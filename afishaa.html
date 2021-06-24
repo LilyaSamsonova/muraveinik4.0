@@ -28,6 +28,7 @@
     left: 50%;
 
   }
+  .zagolovok_afisha1 {display: none;}
   #foot_inst3 {
     position: absolute;
     background: url( 'images/inst.svg');
@@ -61,24 +62,58 @@
     width: 4%;
     height: 28%;
   }
-/* .run {
-  left: 0;
-  top: 30%;
-width: 100%;
-height: 30%;
+  .gallery_row_container {
+          position: relative;
+          left: 0;
+          top: 2%;
+          width: 100%;
+          height: 16%;
+
+          padding: 1.5% 0;
+        }
+        .gallery_row {
+          position: relative;
+          width: 1400%;
+          height: 100%;
+          background: url( 'images/плакатыы.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: 0% top;
+          animation-play-state: running;
+          animation: gallery_row_anim 30s linear infinite;
+        }
+        @keyframes gallery_row_anim {
+          0% {background-position: 0% top;}
+          50% {background-position: -37% top;}
+          100% {background-position: 0% top;}
+        }
+  .gallery_row:hover {
+    animation-play-state: paused;
+    filter: hue-rotate(30deg);
+
+  }
+@media only screen and (max-width: 375px){
+  .sootnosheniye {
+  position: relative;
+  padding-bottom: 280%;
 }
-.run img {
-  left: 0;
-  top: 5%;
+ .footer {
+  position: relative;
   width: 100%;
-  height: 20%;
-} */
+  height: 3%;
+  top: 67%;
+  left: 0%;}
+.qvadrat h3 {
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "SF UI Text";
+}
 .gallery_row_container {
         position: relative;
         left: 0;
-        top: 2%;
+        top: 5%;
         width: 100%;
-        height: 16%;
+        height: 26%;
 
         padding: 1.5% 0;
       }
@@ -95,13 +130,523 @@ height: 30%;
       }
       @keyframes gallery_row_anim {
         0% {background-position: 0% top;}
-        50% {background-position: -37% top;}
+        50% {background-position: -300% top;}
         100% {background-position: 0% top;}
       }
 .gallery_row:hover {
   animation-play-state: paused;
   filter: hue-rotate(30deg);
 
+}
+.zagolovok_afisha1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  display: inline-block;
+  left: 26%;
+  top: 60%;
+}
+.zagolovok_afisha {
+  display: none;
+}
+.afisha_top {
+  position: relative;
+  width: 100%;
+  height: 3.5%;
+}
+.p1 {
+  position: absolute;
+  background: url( 'images/тт1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 8%;
+  top: 40%;
+  height: 10%;
+  width: 40%;
+}
+.p2 {
+  position: absolute;
+  background: url( 'images/тт2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 52%;
+  top: 40%;
+  height: 10%;
+  width: 40%;
+}
+.p3 {
+  position: absolute;
+  background: url( 'images/тт3.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 8%;
+  top: 51%;
+  height: 10%;
+  width: 40%;
+}
+.p4 {
+  position: absolute;
+  background: url( 'images/тт4.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 52%;
+  top: 51%;
+  height: 10%;
+  width: 40%;
+}
+.p5 {
+  position: absolute;
+  background: url( 'images/тт5.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 8%;
+  top: 62%;
+  height: 10%;
+  width: 40%;
+}
+.p6 {
+  position: absolute;
+  background: url( 'images/тт6.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 52%;
+  top: 62%;
+  height: 10%;
+  width: 40%;
+}
+.r1 {
+  position: absolute;
+  background: url( 'images/зиминие.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 8%;
+  top: 80%;
+  height: 12%;
+  width: 40%;
+}
+.r2 {
+  position: absolute;
+  background: url( 'images/управление.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 52%;
+  top: 80%;
+  height: 12%;
+  width: 40%;
+}
+.rr1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  display: inline-block;
+  left: 8%;
+  top: 92%;
+}
+.rr2 {
+  font-family: "SF UI Text";
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  position: absolute;
+  display: inline-block;
+  left: 52%;
+  top: 92%;
+}
+.zagolovok_web {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  display: inline-block;
+  left: 36%;
+  top: 75.5%;
+  /* display: none; */
+}
+.k1 {
+  position: absolute;
+  background: url( 'images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 22.5%;
+  top: 77%;
+  height: 40%;
+  width: 50%;
+}
+.k2 {
+  position: absolute;
+  background: url( 'images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 22.5%;
+  top: 77%;
+  height: 40%;
+  width: 50%;
+}
+.k3 {
+  position: absolute;
+  background: url( 'images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 22.5%;
+  top: 77%;
+  height: 40%;
+  width: 50%;
+}
+.k4 {
+  position: absolute;
+  background: url( 'images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 22.5%;
+  top: 77%;
+  height: 40%;
+  width: 50%;
+}
+.k5 {
+  position: absolute;
+  background: url( 'images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 22.5%;
+  top: 77%;
+  height: 40%;
+  width: 50%;
+}
+.k6 {
+  position: absolute;
+  background: url( 'images/билеты.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 22.5%;
+  top: 77%;
+  height: 40%;
+  width: 50%;
+}
+}
+@media only screen and (max-width: 768px) and (min-width: 376px){
+  .sootnosheniye {
+  position: relative;
+  padding-bottom: 241%;
+  }
+
+  .footer {
+  position: relative;
+  width: 100%;
+  height: 3%;
+  top: 75.5%;
+  left: 0%;
+
+  }
+  .qvadrat h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "SF UI Text";
+  }
+  .menubar {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 30%;
+  }
+  .afisha {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 24%;
+    top: 30%;
+  }
+  .magazin {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 35%;
+    top: 30%;
+  }
+  .logo {
+    background: url( 'images/логотип.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    height: 58.5846154%;
+    width: 4%;
+    left: 49.1%;
+    top: 18%;
+  }
+  .onas {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 74%;
+    top: 30%;
+  }
+  .contact {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 84%;
+    top: 30%;
+  }
+  .gallery_row_container {
+        position: relative;
+        left: 0;
+        top: 4%;
+        width: 100%;
+        height: 18%;
+
+        padding: 1.5% 0;
+      }
+      .gallery_row {
+        position: relative;
+        width: 1400%;
+        height: 100%;
+        background: url( 'images/плакатыы.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0% top;
+        animation-play-state: running;
+        animation: gallery_row_anim 30s linear infinite;
+      }
+      @keyframes gallery_row_anim {
+        0% {background-position: 0% top;}
+        50% {background-position: -70% top;}
+        100% {background-position: 0% top;}
+      }
+  .gallery_row:hover {
+  animation-play-state: paused;
+  filter: hue-rotate(30deg);
+
+  }
+  .zagolovok_afisha1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 600;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 26%;
+  top: 60%;
+  }
+  .zagolovok_afisha {
+  display: none;
+  }
+  .afisha_top {
+  position: relative;
+  width: 100%;
+  height: 3.5%;
+  }
+  .p1 {
+    position: absolute;
+    background: url( 'images/t1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 30%;
+    height: 6%;
+    width: 80%;
+  }
+  .p2 {
+    position: absolute;
+    background: url( 'images/t2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 37%;
+    height: 6%;
+    width: 80%;
+  }
+  .p3 {
+    position: absolute;
+    background: url( 'images/t3.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 44%;
+    height: 6%;
+    width: 80%;
+  }
+  .p4 {
+    position: absolute;
+    background: url( 'images/t4.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 51%;
+    height: 6%;
+    width: 80%;
+  }
+  .p5 {
+    position: absolute;
+    background: url( 'images/t5.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 58%;
+    height: 6%;
+    width: 80%;
+  }
+  .p6 {
+    position: absolute;
+    background: url( 'images/t6.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 10%;
+    top: 65%;
+    height: 6%;
+    width: 80%;
+  }
+  .r1 {
+  position: absolute;
+  background: url( 'images/зиминие.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 10%;
+  top: 80%;
+  height: 11.5%;
+  width: 40%;
+  }
+
+  .r2 {
+  position: absolute;
+  background: url( 'images/управление.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* filter: blur(2px); */
+  left: 52.5%;
+  top: 80%;
+  height: 11.5%;
+  width: 40%;
+  }
+
+  .rr1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  display: inline-block;
+  left: 10%;
+  top: 92%;
+  }
+  .rr2 {
+  font-family: "SF UI Text";
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 22px;
+  position: absolute;
+  display: inline-block;
+  left: 52.5%;
+  top: 92%;
+  }
+  .rr1:hover, .rr2:hover {
+  color: #9CB0FF;
+  }
+
+  .zagolovok_web {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 600;
+  font-size: 36px;
+  position: absolute;
+  display: inline-block;
+  left: 36%;
+  top: 75.5%;
+  /* display: none; */
+  }
+  .k1 {
+  left: 78%;
+  top: 39%;
+  height: 25%;
+  width: 30%;
+  }
+  .k2 {
+    left: 78%;
+    top: 39%;
+    height: 25%;
+    width: 30%;
+  }
+  .k3 {
+    left: 78%;
+    top: 39%;
+    height: 25%;
+    width: 30%;
+  }
+  .k4 {
+    left: 78%;
+    top: 39%;
+    height: 25%;
+    width: 30%;
+  }
+  .k5 {
+    left: 78%;
+    top: 39%;
+    height: 25%;
+    width: 30%;
+  }
+  .k6 {
+    left: 78%;
+    top: 39%;
+    height: 25%;
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+  .zagolovok_afisha {
+  left: 16%;
+  top: 60%;}
+  .zagolovok_afisha1 {display: none;}
+  .zagolovok_web {left: 39%;top: 70%;}
+  .rr1 {
+    font-family: "SF UI Text";
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 32px;
+    position: absolute;
+    display: inline-block;
+    left: 10%;
+    top: 90%;
+  }
+  .rr2 {
+    font-family: "SF UI Text";
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 32px;
+    position: absolute;
+    display: inline-block;
+    left: 52%;
+    top: 90%;
+  }
 }
   </style>
   <body>
@@ -123,6 +668,7 @@ height: 30%;
     </div>
     <div class="afisha_top">
       <h1 class="zagolovok_afisha">БЛИЖАЙШИЕ ТУСЫ В МУРАВЕЙНИКЕ</h1>
+      <h1 class="zagolovok_afisha1">БЛИЖАЙШИЕ ТУСЫ</h1>
       <div class="star1"></div>
       <div class="star2"></div>
    </div>
