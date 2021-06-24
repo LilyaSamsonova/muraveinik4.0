@@ -419,7 +419,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 .highlight {
   position:absolute;
   height:60%;
-  width:100%;
+  width:0%;
   top:0%;
   left:60%;
   pointer-events:none;
@@ -464,12 +464,671 @@ display: none;
 .block {
 display: block;
 }
+@media only screen and (max-width: 375px){
+  .sootnosheniye {
+  position: relative;
+  padding-bottom: 198%;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    top: 95%;
+    left: 0%;}
+
+  .qvadrat h3 {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "SF UI Text";
+  }
+  #foot_inst2 {
+    position: absolute;
+    background: url( '../muraveinik4.0/images/inst.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 77%;
+    width: 4%;
+    height: 54%;
+  }
+  #foot_facebook2 {
+    position: absolute;
+    background: url( '../muraveinik4.0/images/facebook.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 82%;
+    width: 4%;
+    height: 54%;
+  }
+  #foot_google2 {
+    position: absolute;
+    background: url( '../muraveinik4.0/images/google.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 87%;
+    width: 4%;
+    height: 54%;
+  }
+  .zagolovok_anketa {
+    font-family: "SF UI Text";
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    display: inline-block;
+    left: 40%;
+    top: 5%;
+  }
+  .zag1, .zag2, .zag3, .zag4, .zag5, .zag6, .z1, .z2, .z3, .z4, .z5, .z6, .vakansii, .zag{
+  display: none;
+  }
+.map {
+  position: absolute;
+  background: url( '../muraveinik4.0/images/карта.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 57%;
+  left: 11%;
+  width: 78%;
+  height: 60%;
+}
+.c1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+  position: absolute;
+  display: inline-block;
+
+  left: 11%;
+  top: 78%;
+}
+.c2 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+  position: absolute;
+  display: inline-block;
+
+  left: 65%;
+  top: 78%;
+}
+
+  .kupit {
+    position: absolute;
+    background: url( '../muraveinik4.0/images/заявка.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 33%;
+    top: 45%;
+    cursor: pointer;
+    width: 35%;
+    height: 4%;
+  }
+  .kupit:hover{
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.3));
+    transform: scale(1.05);
+  }
+
+form {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  width: 80%;
+  height: 30%;
+  background-color: #3E3A89;
+}
+
+h2 		 {
+  text-align:center;
+  margin-bottom:50px;
+}
+h2 small {
+  font-weight:400;
+  color:#888;
+  display:block;
+}
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+  position:relative;
+  margin-bottom:10px;
+  background-color: #3E3A89;
+}
+input 				{
+  font-size:14px;
+  font-family: "SF UI Text";
+  color: #AFBFFF;
+  font-weight: 400;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  background-color: #3E3A89;
+  border-bottom:0.5px solid #fff;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  font-size:14px;
+  font-family: "SF UI Text";
+  color:#fff;
+
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-5px;
+  font-size:10px;
+  color:#9E9CC4;
+  opacity: 40%;
+  font-family: "SF UI Text";
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:104.6%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#fff;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:0%;
+  top:0%;
+  left:60%;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+.anketa {
+  position: fixed;
+  background: url( 'images/всплывающееокноанкета1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 55%;
+  display: none;
+}
+.leftparty1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+}
+@media only screen and (max-width: 768px) and (min-width: 376px){
+  .sootnosheniye {
+  position: relative;
+  padding-bottom: 122%;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    top: 96%;
+    left: 0%;}
+
+  .qvadrat h3 {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "SF UI Text";
+  }
+  #foot_inst1 {
+    position: absolute;
+    background: url( 'images/inst.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 77%;
+    width: 4%;
+    height: 80%;
+  }
+  #foot_facebook1 {
+    position: absolute;
+    background: url( 'images/facebook.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 82%;
+    width: 4%;
+    height: 80%;
+  }
+  #foot_google1 {
+    position: absolute;
+    background: url( 'images/google.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 87%;
+    width: 4%;
+    height: 80%;
+  }
+
+  .menubar {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 30%;
+  }
+  .afisha {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 24%;
+    top: 30%;
+  }
+  .magazin {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 35%;
+    top: 30%;
+  }
+  .logo {
+    background: url( 'images/логотип.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    height: 58.5846154%;
+    width: 4%;
+    left: 49.1%;
+    top: 18%;
+  }
+  .onas {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 74%;
+    top: 30%;
+  }
+  .contact {
+    font-size: 18px;
+    position: absolute;
+    cursor: pointer;
+    left: 84%;
+    top: 30%;
+  }
+  .zagolovok_anketa {
+    font-family: "SF UI Text";
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    position: absolute;
+    display: inline-block;
+    left: 40%;
+    top: 5%;
+  }
+  .zag1, .zag2, .zag3, .zag4, .zag5, .zag6, .z1, .z2, .z3, .z4, .z5, .z6, .vakansii, .zag{
+  display: none;
+  }
+.map {
+  position: absolute;
+  background: url( '../muraveinik4.0/images/карта.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+}
+.c1 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  display: inline-block;
+
+  left: 10%;
+  top: 84%;
+}
+.c2 {
+  font-family: "SF UI Text";
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  display: inline-block;
+
+  left: 68%;
+  top: 84%;
+}
+
+  .kupit {
+    position: absolute;
+    background: url( '../muraveinik4.0/images/заявка.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 35%;
+    top: 42%;
+    cursor: pointer;
+    width: 35%;
+    height: 4%;
+  }
+  .kupit:hover{
+    filter: drop-shadow(0 0 3px rgba(100,0,0,0.3));
+    transform: scale(1.05);
+  }
+
+form {
+  position: absolute;
+  top: 10%;
+  left: 9%;
+  width: 80%;
+  height: 30%;
+  background-color: #3E3A89;
+}
+
+h2 		 {
+  text-align:center;
+  margin-bottom:50px;
+}
+h2 small {
+  font-weight:400;
+  color:#888;
+  display:block;
+}
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+  position:relative;
+  margin-bottom:18px;
+  background-color: #3E3A89;
+}
+input 				{
+  font-size:18px;
+  font-family: "SF UI Text";
+  color: #AFBFFF;
+  font-weight: 400;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  background-color: #3E3A89;
+  border-bottom:0.5px solid #fff;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  font-size:18px;
+  font-family: "SF UI Text";
+  color:#fff;
+
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-10px;
+  font-size:14px;
+  color:#9E9CC4;
+  opacity: 40%;
+  font-family: "SF UI Text";
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:102.5%; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#fff;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%;
+  width:0%;
+  top:0%;
+  left:60%;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+.anketa {
+  position: fixed;
+  background: url( 'images/всплывающееокноанкета1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  top: 15%;
+  left: 18%;
+  width: 70%;
+  height: 60%;
+  display: none;
+}
+.leftparty1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px){
+  .sootnosheniye {
+  position: relative;
+  padding-bottom: 68%;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    top: 95%;
+    left: 0%;}
+
+  .qvadrat h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "SF UI Text";
+  }
+  #foot_inst1 {
+    position: absolute;
+    background: url( 'images/inst.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 77%;
+    width: 4%;
+    height: 100%;
+  }
+  #foot_facebook1 {
+    position: absolute;
+    background: url( 'images/facebook.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 82%;
+    width: 4%;
+    height: 100%;
+  }
+  #foot_google1 {
+    position: absolute;
+    background: url( 'images/google.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: -10%;
+    left: 87%;
+    width: 4%;
+    height: 100%;
+  }
+  .zagolovok_anketa {
+    font-family: "SF UI Text";
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+    position: absolute;
+    display: inline-block;
+    left: 68%;
+    top: 5%;
+  }
+  .zag1, .zag2, .zag3, .zag4, .zag5, .zag6, .z1, .z2, .z3, .z4, .z5, .z6, .vakansii, .zag{
+  display: none;
+  }
+  .map {
+    position: absolute;
+    background: url( '../muraveinik4.0/images/карта.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 28%;
+    left: 10%;
+    width: 90%;
+    height: 40%;
+  }
+  .c1 {
+    font-family: "SF UI Text";
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    display: inline-block;
+
+    left: 10%;
+    top: 63%;
+  }
+  .c2 {
+    font-family: "SF UI Text";
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    display: inline-block;
+
+    left: 67%;
+    top: 63%;
+  }
+
+    .kupit {
+      position: absolute;
+      background: url( '../muraveinik4.0/images/заявка.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 68%;
+      top: 73%;
+      cursor: pointer;
+      width: 40%;
+      height: 5%;
+    }
+}
   </style>
   <script type="text/javascript">
     $(document).ready(function(){
     $('.kupit').click(function(){
     $('.anketa').css('display', 'block');
     $('.anketa').css('display', 'block');
+    $('input').val('');
     setTimeout(function(){
  $('.anketa').css('display', 'none');
 }, 3000);
@@ -489,9 +1148,7 @@ display: block;
     <a href="contacts.html"><h2 class="contact">контакты</h2></a>
 
     </div>
-    <div class="party1_top">
-      <h1 class="zagolovok_anketa">АНКЕТА</h1>
-   </div>
+
   <div class="leftparty1">
     <div class="vakansii"></div>
     <a href="hostes.html"><div class="zag1">хостес</div></a>
@@ -511,6 +1168,9 @@ display: block;
    <div class="c1">г. Букашки, ул. Отдыха, 13<br>+7 (989) 567-89-80</div>
    <div class="c2">вс–чт: 17:00–00:00<br>пт–cб: 17:00–06:00</div>
   </div>
+  <div class="party1_top">
+    <h1 class="zagolovok_anketa">АНКЕТА</h1>
+ </div>
 <div class="penatic"></div>
 <div class="kupit"></div>
 <form>
