@@ -642,7 +642,6 @@ color: #9CB0FF;
 @media only screen and (max-width: 375px) {
   .menu {display: none;}
   /* скрываем чекбокс */
-  .hamburger-menu{display: block;}
 #menu__toggle {
   opacity: 0;
 }
