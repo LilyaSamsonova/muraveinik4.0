@@ -1512,9 +1512,13 @@ color: #9CB0FF;
   }
 
 }
+@media only screen  and (max-device-width: 374px){
+
+}
 @media only screen and (max-width: 1440px) and (min-width: 1025px){
   .hamburger-menu {display: none;}
   .zagolovok_shop{left: 18%;}
+    .zagolovok_afisha{left: 18%;}
   .sale{font-size: 30px;left: 70%;}
   .month1, .month2, .month3, .party1, .party1, .party2, .party3, .coct1, .coct2, .coct3, .vib1, .vib2, .vib3 {font-size: 16px; left: 30%;}
   .m30, .m03, .m06, .me01, .me02, .me03 {font-size: 30px;}
