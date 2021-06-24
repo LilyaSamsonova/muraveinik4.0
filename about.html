@@ -6,6 +6,7 @@
     <meta property="og:title" content="MuraveinikNightClub">
     <meta property="og:description" content="Ночной клуб МУРАВЕЙНИКА">
     <meta property="og:image" content="">
+    <link rel="icon" type="image/svg" href="https://raw.githubusercontent.com/LilyaSamsonova/muraveinik4.0/master/images/fav.svg">
     <meta charset="utf-8">
     <link rel="stylesheet" href="stylesheets/master.css">
     <title>O МУРАВЕЙНИКЕ</title>
@@ -60,7 +61,22 @@
     width: 20%;
     height: 120%;
   }
-
+.qe {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "SF UI Text";
+  color: white;
+  opacity: 30%;
+  top: 2%;
+  left: 5%;
+  animation: q 1s infinite ease;
+}
+@keyframes q {
+  0%{opacity: 30%;}
+  50%{opacity: 10%;}
+  100%{opacity: 30%;}
+}
   .one1 h3{
     position: absolute;
 
@@ -149,6 +165,7 @@
     left: 92%;
     width: 5%;
     height: 10%;
+    opacity: 50%;
   }
   .star3 {
     position: absolute;
@@ -173,6 +190,7 @@
     left: 80%;
     width: 5%;
     height: 10%;
+    opacity: 50%;
   }
   .star5 {
     position: absolute;
@@ -197,6 +215,7 @@
     left: 12%;
     width: 5%;
     height: 10%;
+    opacity: 50%;
   }
   .star7 {
     position: absolute;
@@ -221,6 +240,7 @@
     left: 10%;
     width: 5%;
     height: 10%;
+    opacity: 50%;
   }
   .star9 {
     position: absolute;
@@ -231,6 +251,7 @@
     left: 25%;
     width: 5%;
     height: 10%;
+    opacity: 50%;
   }
   .star10 {
     position: absolute;
@@ -255,6 +276,7 @@
     left: 53%;
     width: 5%;
     height: 10%;
+    opacity: 50%;
   }
   .star12 {
     position: absolute;
@@ -1366,8 +1388,22 @@ transition-duration: .25s;
 }, 2000);
     })
     $('.star1').click(function(){
-    $('body').css('display', 'block');
-    $('.one1').css('display', 'block');
+    $('body').css('background', '#EB5FB9');
+    })
+    $('.star3').click(function(){
+    $('body').css('background', '#7056D0');
+    })
+    $('.star5').click(function(){
+    $('body').css('background', '#553FCC');
+    })
+    $('.star7').click(function(){
+    $('body').css('background', '#EA31A8');
+    })
+    $('.star10').click(function(){
+    $('body').css('background', '#1F16C7');
+    })
+    $('.star12').click(function(){
+    $('body').css('background', '#075CFF');
     })
     });
     </script>
@@ -1404,6 +1440,7 @@ transition-duration: .25s;
       <div class="four4 none"> <h3>мы круто</h3> </div>
       <div class="five5 none"> <h3>мы вкусно</h3> </div>
       <div class="six6 none"> <h3>мы до утра</h3> </div>
+      <div class="qe">нажимай на звездочки</div>
 
   <div class="footer">
   <div class="qvadrat">
