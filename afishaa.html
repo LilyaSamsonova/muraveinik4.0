@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="article">
     <meta property="og:title" content="MuraveinikNightClub">
     <meta property="og:description" content="Ночной клуб МУРАВЕЙНИКА">
@@ -97,11 +97,103 @@
   position: relative;
   padding-bottom: 280%;
 }
+.hamburger-menu {
+  display: block;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+display: absolute; /* используем flex для центрирования содержимого */
+align-items: center;  /* центрируем содержимое кнопки */
+position: fixed;
+top: 20px;
+left: 20px;
+width: 26px;
+height: 26px;
+cursor: pointer;
+z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+display: block;
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: white;
+}
+.menu__btn > span::before {
+content: '';
+top: -8px;
+}
+.menu__btn > span::after {
+content: '';
+top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+display: block;
+position: fixed;
+visibility: hidden;
+top: 0;
+left: -100%;
+width: 300px;
+height: 100%;
+margin: 0;
+padding: 80px 0;
+list-style: none;
+text-align: left;
+background-color: #F053B8;
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+display: block;
+padding: 12px 24px;
+color: white;
+font-family: "SF UI Text";
+font-size: 20px;
+font-weight: 400;
+text-decoration: none;
+}
+.menu__item:hover {
+background-color: #7946C6;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+top: 0;
+transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+top: 0;
+transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+visibility: visible;
+left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+transition-duration: .25s;
+}
+.menu__box {
+transition-duration: .25s;
+}
+.menu__item {
+transition-duration: .25s;
+}
  .footer {
   position: relative;
   width: 100%;
   height: 3%;
-  top: 67%;
+  top: 65%;
   left: 0%;}
 .qvadrat h3 {
   font-size: 10px;
@@ -351,7 +443,7 @@
   position: relative;
   padding-bottom: 241%;
   }
-
+.hamburger-menu{display: none;}
   .footer {
   position: relative;
   width: 100%;
@@ -623,6 +715,7 @@
   .zagolovok_afisha {
   left: 16%;
   top: 60%;}
+  .hamburger-menu {display: none;}
   .zagolovok_afisha1 {display: none;}
   .zagolovok_web {left: 39%;top: 70%;}
   .rr1 {
@@ -647,6 +740,9 @@
     left: 52%;
     top: 90%;
   }
+}
+@media only screen and (max-width: 1679px) and (min-width: 1441px){
+  .hamburger-menu{display:none;}
 }
   </style>
   <body>
@@ -679,7 +775,6 @@
   <div class="gallery_row"></div>
 </div>
 
-
    <div class="p1">
   <a href="partyone.html"> <div class="k1"></div></a>
    </div>
@@ -703,6 +798,7 @@
    <a href="https://lilyasamsonova.github.io/muraveinik/"><div class="rr1">ЗИМНИЕ ВЕЧЕРИНКИ</div></a>
   <a href="https://lilyasamsonova.github.io/muraveinik3.0/">  <div class="r2"></div></a>
    <a href="https://lilyasamsonova.github.io/muraveinik3.0/"><div class="rr2">УПРАВЛЕНИЕ МУРАВЬЕМ</div></a>
+
   <div class="footer">
   <div class="qvadrat">
   <a href="https://portfolio.hse.ru/Student/16414"> <h3 class="foot1">муравейник</h3></a>
@@ -711,6 +807,20 @@
   <a id="foot_facebook3" href="https://www.facebook.com/profile.php?id=100004257617877"></a>
   <a id="foot_google3" href="mailto:lilyasamsonova@gmail.com"></a>
   </div>
+  <div class="hamburger-menu">
+     <input id="menu__toggle" type="checkbox" />
+     <label class="menu__btn" for="menu__toggle">
+       <span></span>
+     </label>
+     <ul class="menu__box">
+       <li><a class="menu__item" href="index.html">главная</a></li>
+       <li><a class="menu__item" href="bar.html">барное меню</a></li>
+       <li><a class="menu__item" href="afishaa.html">афиша</a></li>
+       <li><a class="menu__item" href="shop.html">магазин</a></li>
+       <li><a class="menu__item" href="about.html">о нас</a></li>
+       <li><a class="menu__item" href="contacts.html">контакты</a></li>
+     </ul>
+   </div>
   </div>
       </div>
   </body>
