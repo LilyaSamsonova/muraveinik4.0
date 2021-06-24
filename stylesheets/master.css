@@ -639,8 +639,16 @@ color: #9CB0FF;
   height: 8%;
 }
 /* RESPONSIVE */
+@media only screen and (min-width: 1441px) and (max-width: 1679px){
+  .hamburger-menu {
+    display: none;
+  }
+  }
 @media only screen and (max-width: 375px) {
   .menu {display: none;}
+  .hamburger-menu {
+    display: block;
+  }
   /* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
@@ -742,7 +750,7 @@ color: #9CB0FF;
     left: 0%;
     top: 0%;
     background: #3E3A89;
-z-index: 1;
+    z-index: 1;
   }
   .novosti {
 
@@ -1096,6 +1104,7 @@ z-index: 1;
   position: relative;
   padding-bottom: 210.9375%;
   }
+  .hamburger-menu {display: none;}
   .menu {
     z-index: 3;
   }
@@ -1503,13 +1512,26 @@ z-index: 1;
   }
 
 }
+@media only screen and (max-width: 1440px) and (min-width: 1025px){
+  .hamburger-menu {display: none;}
+  .zagolovok_shop{left: 18%;}
+  .sale{font-size: 30px;left: 70%;}
+  .month1, .month2, .month3, .party1, .party1, .party2, .party3, .coct1, .coct2, .coct3, .vib1, .vib2, .vib3 {font-size: 16px; left: 30%;}
+  .m30, .m03, .m06, .me01, .me02, .me03 {font-size: 30px;}
+}
+@media only screen and (max-width: 1920px) and (min-width: 1680px){
+  .hamburger-menu {display: none;}
+}
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
   .hamburger-menu{display: none;}
+.sale{font-size: 30px;left: 70%;}
+.month1, .month2, .month3, .party1, .party1, .party2, .party3, .coct1, .coct2, .coct3, .vib1, .vib2, .vib3 {font-size: 16px; left: 28%;}
+.m30, .m03, .m06, .me01, .me02, .me03 {font-size: 30px;}
 .novosti {
   top: 15%;
-  left: 15%;
-  width: 70%;
-  height: 50%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
 }
 .arrow1 {
   top: 68%;
